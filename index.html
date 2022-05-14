@@ -13,17 +13,17 @@
     <h2>&#x1f4aa;</h2>
     <label for=""><input type="radio" value="5" name="time" checked>30秒</label>
     <label for=""><input type="radio" value="60" name="time">60秒</label>
-    <input id="startButton" type="submit" value="スタート">
-    <p>本日のプランク数：<span class="didPlank">0</span>秒</p>
+    <button id="startButton">スタート</button>
+    <p class="result">本日のプランク数：<span class="didPlank">0</span>秒</p>
   </div>
   <div id="page2" class="hidden">
     <p class="time"><span id="timer"></span>秒</p>
   </div>
   <div id="page3" class="hidden">
     <!-- <p>プランクを終了しました</p> -->
-    <p>本日のプランク数：<span class="didPlank">0</span>秒</p>
+    <p class="result">本日のプランク数：<span class="didPlank">0</span>秒</p>
     <a id="link" href="https://twitter.com/share?url=https%3A%2F%2Fririo08.github.io%2FDo-Plank%2F&text=プランクチャレンジ" target="_blank">シェアする</a>
-    <button id="oneMore">もう一度</button>
+    <button id="oneMore" class="button">もう一度</button>
   </div>
   <script src="timer.js"></script>
 </body>

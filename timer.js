@@ -27,6 +27,8 @@ StartButton.addEventListener("click",()=>{
       selectedTime = SelectTime.item(i).value
     }
   }
+  document.getElementById("page1").classList.remove("show")
+  document.getElementById("page2").classList.add("show")
 
   // タイマー回路
   sec = parseInt(selectedTime)
@@ -42,6 +44,8 @@ StartButton.addEventListener("click",()=>{
   let doLoopTimer = setInterval(minusTime, 1000)
 
   let endTimer = () => {
+    document.getElementById("page2").classList.remove("show")
+    document.getElementById("page3").classList.add("show")
     console.log("done")
     didPlank += parseInt(selectedTime)
     didPlankTarget.forEach(element => {
@@ -55,4 +59,10 @@ StartButton.addEventListener("click",()=>{
     document.getElementById("link").href = url
     console.log(url)
   }
+})
+
+// もう一度ボタン
+document.getElementById("oneMore").addEventListener("click",()=>{
+  document.getElementById("page3").classList.remove("show")
+  document.getElementById("page1").classList.add("show")
 })

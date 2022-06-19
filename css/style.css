@@ -93,6 +93,8 @@ body {
 h2 {
   font-size: 80px;
   text-align: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .form {

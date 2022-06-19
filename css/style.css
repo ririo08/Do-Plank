@@ -78,4 +78,128 @@ h6 {
 
 #page1, #page2, #page3 {
   height: 100vh;
+  background-color: white;
+}
+
+body {
+  background-color: #fc9404;
+}
+
+.main-title {
+  text-align: center;
+  padding-top: 10vh;
+}
+
+h2 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  background-color: #fc9404;
+  padding: 5px 10px;
+  border-radius: 8px;
+  opacity: .8;
+}
+
+input:checked + label {
+  background-color: #fc9404;
+  color: white;
+  opacity: 1;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+#startButton, #oneMore {
+  border: 2px solid #fc9404;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.result {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.shareBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shareBox-twitterShare {
+  display: block;
+  height: 40px;
+  width: 120px;
+  color: #fc9404;
+}
+
+.shareBox-twitter {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+  margin-left: 10px;
+  color: #fc9404;
+}
+
+.shareBox-github {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+  margin-left: 10px;
+  color: #fc9404;
+}
+
+.time {
+  text-align: center;
+  font-size: 80px;
+  padding-top: 20vh;
+}
+
+#link {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+  color: #fc9404;
+}
+
+@media screen and (orientation: landscape) {
+  #page1, #page2, #page3 {
+    max-width: 600px;
+    margin: auto;
+  }
 }

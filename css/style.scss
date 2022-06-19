@@ -30,10 +30,14 @@ body {
 }
 
 h2 {
+  margin: auto;
+  margin-top: 20px;
   font-size: 80px;
+  width: 80px;
   text-align: center;
   transform:rotate(-90deg);
 }
+
 
 .form {
   text-align: center;

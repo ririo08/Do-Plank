@@ -91,7 +91,10 @@ body {
 }
 
 h2 {
+  margin: auto;
+  margin-top: 20px;
   font-size: 80px;
+  width: 80px;
   text-align: center;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
